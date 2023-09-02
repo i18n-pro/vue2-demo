@@ -6,7 +6,7 @@
           {{ item[1] }}
         </option>
       </select>
-      <div className="title">{{ $t('基础示例') }}</div>
+      <div class="title">{{ $t('基础示例') }}</div>
       <div>{{ $t('简单的一段描述') }}</div>
       <div>{{ $t('{0}是世界上最好的语言？我不信', bestProgramLang) }}</div>
       <div>
@@ -19,19 +19,19 @@
         ) }}
       </div>
 
-      <div className="title">{{ $t('格式化数字') }}</div>
+      <div class="title">{{ $t('格式化数字') }}</div>
       <div>{{ $t('GitHub全球开发者数量达到了{n0}', 83000000) }}</div>
 
-      <div className="title">{{ $t('格式化金额') }}</div>
+      <div class="title">{{ $t('格式化金额') }}</div>
       <div>{{ $t('售价{c0}', 123456.78) }}</div>
 
-      <div className="title">{{ $t('格式化日期') }}</div>
+      <div class="title">{{ $t('格式化日期') }}</div>
       <div>{{ $t('今天的日期是{d0}', date) }}</div>
 
-      <div className="title">{{ $t('格式化时间') }}</div>
+      <div class="title">{{ $t('格式化时间') }}</div>
       <div>{{ $t('当前时间：{t0}', date) }}</div>
 
-      <div className="title">{{ $t('格式化复数') }}</div>
+      <div class="title">{{ $t('格式化复数') }}</div>
       <div>{{ $t('我有{p0个苹果}', 0) }}</div>
       <div>{{ $t('我有{p0个苹果}', 1) }}</div>
       <div>{{ $t('我有{p0个苹果}', 5) }}</div>
@@ -116,6 +116,12 @@ export default {
 </script>
 
 <style>
+.title {
+  font-size: larger;
+  font-weight: bolder;
+  margin: 10px 0 5px 0;
+}
+
 .loading {
   position: fixed;
   width: 100vw;
