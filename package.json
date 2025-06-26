@@ -8,13 +8,15 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/node": "^24.0.4",
     "prettier": "^3.0.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   },
   "dependencies": {
-    "@i18n-pro/vue2": "1",
+    "@i18n-pro/vue2": "2.0.0-alpha.0",
     "@vitejs/plugin-vue2": "^2.2.0",
+    "i18n-pro": "3.0.0-alpha.2",
     "vue": "^2.7.0"
   }
 }
