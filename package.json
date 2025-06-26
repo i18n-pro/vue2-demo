@@ -13,7 +13,7 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
-    "@i18n-pro/vue2": "1.0.1",
+    "@i18n-pro/vue2": "1",
     "@vitejs/plugin-vue2": "^2.2.0",
     "vue": "^2.7.0"
   }
