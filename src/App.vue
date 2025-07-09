@@ -63,8 +63,14 @@ export default {
   methods: {
     async onSelectChange(e) {
       const locale = e.target.value
-      await this.$setI18n({ locale })
-      history.replaceState(null, '', `?locale=${locale}`)
+      this.loading = true
+      try {
+        await this.$setI18n({ locale })
+        history.replaceState(null, '', `?locale=${locale}`)
+      } catch (error) {
+        console.error(error)
+      }
+      this.loading = false
     }
   },
   mounted() {
